@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esoterismo</title>
+    <style>
+        /* Reset general */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5; /* Fondo lila más claro */
+            color: #333;
+        }
+
+        /* Menú Horizontal */
+        .menu-horizontal {
+            background-color: #7a3b8b; /* Color de fondo del menú */
+            padding: 10px 0;
+        }
+
+        .menu-horizontal ul {
+            list-style: none;
+            display: flex; /* Establece los elementos en horizontal */
+            justify-content: center; /* Centra los elementos */
+        }
+
+        .menu-horizontal ul li {
+            margin: 0 20px; /* Espaciado entre los elementos */
+        }
+
+        .menu-horizontal ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu-horizontal ul li a:hover {
+            color: #d9c6e0; /* Efecto hover */
+        }
+
+        /* Encabezado */
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #7a3b8b;
+        }
+
+        /* Redes Sociales */
+        .redes-sociales {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .redes-sociales h2 {
+            color: #7a3b8b;
+        }
+
+        .redes-sociales ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .redes-sociales ul li {
+            margin: 5px 0;
+        }
+
+        .redes-sociales ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .redes-sociales ul li a:hover {
+            color: #7a3b8b;
+        }
+
+        /* Frase central */
+        .frase-central {
+            text-align: center;
+            font-style: italic;
+            margin: 20px;
+            color: #555;
+        }
+
+        /* Contenedor de cajas */
+        .contenedor-cajas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        /* Cajas individuales */
+        .caja {
+            background-color: #d9c6e0;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #7a3b8b;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Modificación específica de posición */
+        .caja-grande {
+            grid-column: span 2; /* Hace que la caja de imagen ocupe dos columnas */
+            height: 300px; /* Hace la imagen más grande */
+        }
+
+        /* Sección de imagen */
+        .seccion-imagen {
+            margin: 0 auto;
+            width: 100%;
+            height: 49vh; /* Ajusta la altura a 100% del alto de la ventana */
+            border: 2px dashed #7a3b8b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .seccion-imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen cubra toda el área */
+            object-position: center; /* Centra la imagen dentro del cuadro */
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #7a3b8b;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú Horizontal -->
+    <nav class="menu-horizontal">
+        <ul>
+            <li><a href="#">Plantas Medicinales</a></li>
+            <li><a href="#">Astrología</a></li>
+            <li><a href="#">Numerología</a></li>
+            <li><a href="#">Tarot</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título principal -->
+    <header>
+        <h1>Esoterismo</h1>
+    </header>
+
+    <!-- Redes Sociales -->
+    <section class="redes-sociales">
+        <h2>Redes Sociales</h2>
+        <ul>
+            <li>🟦 <a href="#">Facebook: VIK_EST</a></li>
+            <li>📸 <a href="#">Instagram: Esotera_VK</a></li>
+            <li>🕊️ <a href="#">X (Twitter): @VIKI.ESOTERIA</a></li>
+        </ul>
+    </section>
+
+    <!-- Frase Central -->
+    <section class="frase-central">
+        <p>"La verdad no se encuentra en los libros, sino en la experiencia interior."</p>
+    </section>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="contenedor-cajas">
+            <div class="caja">Alquimia Espiritual</div>
+            <div class="caja">La Demonología y los Ángeles</div>
+            <div class="caja">Magia y Hechicería</div>
+            <div class="caja">Alquimia y Transmutación</div>
+        </div>
+
+        <!-- Imagen más grande -->
+        <div class="seccion-imagen">
+            <!-- Aquí es donde agregas la imagen descargada desde tu computadora -->
+            <img src="ESO.jpg" alt="Imagen de ejemplo">
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Esoterismo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
